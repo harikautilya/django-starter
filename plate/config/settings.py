@@ -37,6 +37,8 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
+    'eb_sqs',
+    'search',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -105,10 +107,9 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/
-
+EB_AWS_REGION = "us-east-2"
 LANGUAGE_CODE = 'en-us'
 
 TIME_ZONE = 'UTC'
